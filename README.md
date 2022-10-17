@@ -30,7 +30,7 @@ Once everything is set, select Rescue from the top right menu and reboot.<br>
 After booting is complete, click "Launch LISH Console" and log in to the CLI for rescue.<br>
 ![image](https://user-images.githubusercontent.com/83022348/194116292-f2bec0d6-116f-41c4-8ceb-b53e6101c4a7.png)<br>
 Rewrite `<VERSION>` to your favorite Windows version (10, 12, 16, 19) and run it in console.<br>
-`wget -O- --no-check-certificate https://archive.org/download/windows4vpsisorecoverrrq11/windows<VERSION>.gz | unzip | dd of=/dev/sda`<br>
+`wget -O - --no-check-certificate https://archive.org/download/windows4vpsisorecoverrrq11/windows<VERSION>.gz | gunzip | dd of=/dev/sda`<br>
 ![image](https://user-images.githubusercontent.com/83022348/194118756-5addc7ce-102e-47ea-b6a4-eab70cdbc876.png)
 *Let's have some tea and wait...*
 
